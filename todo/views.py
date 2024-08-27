@@ -23,7 +23,7 @@ def index(request):
         "list" : item_list,
         "title" : "TODO LIST",
     }
-    return (request, 'todo/index.html', page)
+    return render(request, 'todo/index.html', page)
 
 # function to remove item, it receive todo item_id as primary key from url
 def remove(request, item_id):
